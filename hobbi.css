@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+table {
+    max-width: 600px;
+    width: 90%;
+    margin: auto;
+}
+table, th, td, tr {
+    border-collapse: collapse;
+    border: 1px solid #818181;
+}
+th, td{
+    text-align: center;
+}
+th{
+    background-color: black;
+    color: white;
+}
+td:nth-Child(even) {
+    background: lightgray;
+}
+
+iframe {
+    height: 350px;
+    width: 95%;
+    margin: 10px;
+}
+.a{
+    max-width: 300px;
+    border: 3px solid black;
+    text-align: center;
+    border-radius: 20px;
+    background-color: cadetblue;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 150px;
+}
+
+.a a:hover{
+    text-decoration: none;
+
+}
+.a a:visited{
+    text-decoration: none;
+}

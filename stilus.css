@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+
+body {
+    background-image: url(képek/back.jpg);
+    font-family: 'Mitr', sans-serif;
+}
+main {
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+    background-color: black;
+    border-radius: 20px;
+    margin: auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+        "he he he he he he he he he "
+        "ar ar ar ar ar ar ar na na"
+        "fo fo fo fo fo fo fo fo fo "
+}
+
+header {
+    background-image: url(képek/viz-1280x640.jpeg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 330px;
+    background-color:b;
+    grid-area: he;
+}
+header h1 {
+    text-align: left;
+    padding-top: 225px;
+    color:blue;
+    font-size: 50px;
+}
+
+nav {
+    margin: 5px;
+    min-width: 150px;
+    background-color: black;
+    float: left;
+    grid-area: na;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding-left: 30px; 
+}
+nav a:hover{ 
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-color: white;
+    border-radius: 15px;
+    color: black;
+}
+nav li { 
+    list-style-type: none;
+    text-align: left;
+}
+nav ul {
+     padding: 0px;
+     margin: 0px;
+     display: grid;
+     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+article {
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    padding: 10px;
+    grid-area: ar;
+}
+article h2 {
+    text-align: center;
+}
+article p {
+    padding-left: 5px;
+}
+article h3 {
+    padding-left: 15px;
+}
+
+footer {
+    padding-top: 10px;
+    height: 50px;
+    text-align: center;
+    color: white;
+    grid-area: fo;
+}
+
+.kepek{
+    margin-top: 10px;
+    width: auto;
+    float: right;
+
+}
+
+
+
+@media only screen and (max-width: 768px) { 
+    
+    header {
+        background-image: url(img/rickmorty_700.jpg);
+        background-repeat: no-repeat;
+        height: 380px;
+        border-radius: 20px 20px 0px 0px;
+    }
+    header h1 {
+        padding-top: 200px;
+    }
+    
+    article {
+        margin: auto;
+        max-width: 680px;
+        width:90%
+    }
+    
+    main {
+        max-width: 500px;
+        margin: 5px;
+        border-radius: 20px;
+        width:90%;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-areas:
+            "he he he he he he he he he "
+            "na na na na na na na na na "
+            "ar ar ar ar ar ar ar ar ar "
+            "fo fo fo fo fo fo fo fo fo "    
+    }
+    
+    
+    nav {
+        height: 100px;
+    }
+    nav a {
+        width: 90%;
+    }
+    nav li { 
+        text-align: center;
+    }
+    nav ul {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    nav a:hover {
+        margin-left: 5px;
+    }
+    
+}
