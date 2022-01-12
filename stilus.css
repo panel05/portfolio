@@ -9,7 +9,7 @@ main {
     max-width: 1000px;
     width: 90%;
     margin: auto;
-    background-color: black;
+    background-color:#3366ff;
     border-radius: 20px;
     margin: auto;
     display: grid;
@@ -25,7 +25,6 @@ header {
     background-size: auto;
     background-repeat: no-repeat;
     height: 330px;
-    background-color:b;
     grid-area: he;
 }
 header h1 {
